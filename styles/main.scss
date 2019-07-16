@@ -1,0 +1,28 @@
+header {
+    background-color: black;
+    height: 50px;
+    .content {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    outline: 1px solid
+}
+
+.card {
+    border: 1px dashed green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pets {
+    background-color: black;
+}
+
+
