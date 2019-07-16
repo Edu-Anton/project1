@@ -1,40 +1,58 @@
-header {
-  background-color: black;
-  height: 50px;
+:root {
+  --bg-black: black;
+  --font-white: white;
 }
 
-header .content {
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: var(--bg-black);
+}
+
+h1,
+h2,
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+.container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pets {
+  background-color: var(--bg-black);
+}
+
+/*
+HEADER
+*/
+header {
+  color: var(--font-white);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: red;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 900px;
-  outline: 1px solid;
-}
-
-.card {
-  border: 1px dashed green;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.pets {
-  background-color: black;
+header .logo {
+  font-size: 24px;
 }
 /*# sourceMappingURL=main.css.map */

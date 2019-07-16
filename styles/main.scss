@@ -1,28 +1,64 @@
-header {
-    background-color: black;
-    height: 50px;
-    .content {
-        display: flex;
-        justify-content: space-between;
-        
-    }
-}
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 900px;
-    outline: 1px solid
+:root {
+    --bg-black: black;
+    --font-white: white; 
 }
 
-.card {
-    border: 1px dashed green;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: var(--bg-black);
+}
+
+h1,
+h2,
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+.container {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .pets {
-    background-color: black;
+    background-color: var(--bg-black);
 }
+
+/*
+HEADER
+*/
+header {
+    color: var(--font-white);
+    .logo {
+        font-size: 24px;
+    }
+    display: flex;
+    justify-content: space-between;
+}
+
+// BANNER
+
+.banner {
+    &__img {
+        width: 100%;
+    }
+}
+
 
 
