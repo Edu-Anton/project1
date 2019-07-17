@@ -1,6 +1,8 @@
 :root {
   --bg-black: black;
   --color-white: white;
+  --inner-side-padding: 50px 
+;
 }
 
 body {
@@ -57,7 +59,7 @@ HEADER
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 50px;
+  padding: 20px var(--inner-side-padding);
 }
 
 .header .logo {
@@ -92,7 +94,7 @@ BANNER
 .banner__content {
   position: absolute;
   color: var(--color-white);
-  margin-left: 50px;
+  margin-left: var(--inner-side-padding);
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -119,7 +121,7 @@ BANNER
 WELCOME
 */
 .welcome {
-  padding: 70px 50px;
+  padding: 70px var(--inner-side-padding);
 }
 
 .welcome__title {
@@ -132,8 +134,8 @@ BLOG
 */
 .blog {
   margin-bottom: 70px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: var(--inner-side-padding);
+  padding-right: var(--inner-side-padding);
 }
 
 .blog__title {

@@ -1,6 +1,7 @@
 :root {
     --bg-black: black;
-    --color-white: white; 
+    --color-white: white;
+    --inner-side-padding: 50px 
 }
 
 body {
@@ -52,7 +53,7 @@ HEADER
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 20px var(--inner-side-padding);
     .logo {
         font-size: 24px;
         color: var(--color-white);
@@ -77,7 +78,7 @@ BANNER
     &__content {
         position: absolute;
         color: var(--color-white);
-        margin-left: 50px;
+        margin-left: var(--inner-side-padding);
         align-self: center
     }
     &__title {
@@ -100,11 +101,10 @@ BANNER
 WELCOME
 */
 .welcome {
-    padding: 70px 50px;
+    padding: 70px var(--inner-side-padding);
     &__title {
         text-align: center;
         margin-bottom: 20px;
-
     }
 }
 
@@ -113,8 +113,8 @@ BLOG
 */
 .blog {
     margin-bottom: 70px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: var(--inner-side-padding);
+    padding-right: var(--inner-side-padding);
     &__title {
         text-align: center;
         font-weight: bold;
